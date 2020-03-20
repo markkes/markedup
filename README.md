@@ -1,6 +1,6 @@
 # Markedup.nl - website build with Vue.js
 
-Welcome to the repository of the website for markedup.nl. This website is setup with :love: by Mark Feenstra. Front-end Developer based in Heemskerk, the Netherlands. Have any questions, suggestions or just want a chat. Contact me via mark@markedup.nl.
+Welcome to the repository of the website for markedup.nl. This website is setup and build by Mark Feenstra. Front-end Developer based in Heemskerk, the Netherlands. Do you have any questions, suggestions or just want a chat. Contact me via mark@markedup.nl.
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/34629e17-b819-453e-a5ac-f8f0c1417993/deploy-status)](https://app.netlify.com/sites/markedup/deploys)
 
@@ -26,7 +26,7 @@ Welcome to the repository of the website for markedup.nl. This website is setup 
 
 ## Authors
 
-* **Mark Feenstra** - *All of the development* - [markkes](https://github.com/markkes)
+* **Mark Feenstra** - [markkes](https://github.com/markkes)
 
 ## License
 
