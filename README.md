@@ -2,6 +2,8 @@
 
 Welcome to the repository of the website for markedup.nl. This website is setup with :love: by Mark Feenstra. Front-end Developer based in Heemskerk, the Netherlands. Have any questions, suggestions or just want a chat. Contact me via mark@markedup.nl.
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/34629e17-b819-453e-a5ac-f8f0c1417993/deploy-status)](https://app.netlify.com/sites/markedup/deploys)
+
 ## Getting Started
 
 ### 1. Install Gridsome CLI tool if you don't have
