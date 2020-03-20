@@ -19,8 +19,9 @@ Welcome to the repository of the website for markedup.nl. This website is setup 
 
 ## Built With
 
+* [Visual Studio Code](https://code.visualstudio.com/) - Source code editor
 * [Prismic.io](http://prismic.io/) - Content Management System
-* [Gridsome](https://gridsome.org/) - A awesome Vue.js framework
+* [Gridsome](https://gridsome.org/) - Awesome Vue.js framework
 * [Netlify](https://netlify.com) - Hosting and deployment
 
 ## Authors
