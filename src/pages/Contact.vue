@@ -9,7 +9,9 @@
 export default {
   metaInfo: {
     title: 'Contact - Mark Feenstra - Markedup.nl',
-    title: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Error doloremque omnis animi, eligendi magni a voluptatum.'
+    meta: [
+      { name: 'description', content: 'Neem contact op om mij uit te dagen voor een nieuwe toffe opdracht of gewoon even gezellig te praten.' }
+    ]
   }
 }
 </script>
