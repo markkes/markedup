@@ -5,8 +5,7 @@
 // To restart press CTRL + C in terminal and run `gridsome develop`
 
 module.exports = {
-  siteName: 'Mark Feenstra',
-  siteUrl: 'https://markfeenstra.nl',
-  icon: './src/favicon.png',
+  siteName: 'Markedup',
+  siteUrl: 'https://markedup.nl',
   plugins: []
 }
