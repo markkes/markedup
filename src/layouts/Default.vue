@@ -6,9 +6,9 @@
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
       <nav class="nav">
-        <g-link class="ml-3" to="/">Home</g-link>
-        <g-link class="ml-3" to="/artikelen/">Artikelen</g-link>
-        <g-link class="ml-3" to="/contact/">Contact</g-link>
+        <g-link class="ml-4" to="/">Home</g-link>
+        <g-link class="ml-4" to="/artikelen/">Artikelen</g-link>
+        <g-link class="ml-4" to="/contact/">Contact</g-link>
       </nav>
     </header>
 
@@ -30,6 +30,36 @@ query {
 }
 </static-query>
 
-<style>
+<style lang="postcss">
+
+  :root {
+    --color-link: #000;
+    --color-text: #7d828d;
+    --color-primary: #5c6ac4;
+    --color-secondary: #ecc94b;
+  }
+
+  body {
+    @apply text-color-text;
+  }
+
+  h1 {
+    @apply text-2xl;
+  }
+
+  h2 {
+    @apply text-xl;
+  }
+
+  h3 {
+    @apply text-lg;
+  }
+
+  a {
+    @apply text-black underline;
+    &:hover {
+      @apply text-primary no-underline;
+    }
+  }
 
 </style>
