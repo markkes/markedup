@@ -1,6 +1,6 @@
 <template>
   <div class="layout">
-    <header>
+    <header class="flex">
       <strong>
         <g-link to="/">{{ $static.metadata.siteName }}</g-link>
       </strong>
@@ -47,26 +47,11 @@ html,
 }
 
 html {
-  font-size: 1em;
   border: 20px solid var(--theme-color);
 }
 
 body {
   background-color: var(--white-color);
-  font-family: -apple-system,system-ui,BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
-  margin: 0;
-  padding: 0;
-  line-height: 1.5;
-}
-
-.content {
-  max-width: 786px;
-  margin: 0 auto;
-  padding: 50px 0;
-}
-
-p {
-  font-size: 20px;
 }
 
 a {
@@ -94,33 +79,6 @@ p a:hover {
   background-size: 100% 100%;
   color: var(--white-color);
 
-}
-
-.layout {
-  padding: 40px;
-  display: flex;
-  flex-direction: column;
-  height: calc(100vh - 120px);
-  justify-content: space-between;
-  overflow: scroll;
-}
-
-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-bottom: 20px;
-}
-
-.nav__link {
-  margin-left: 20px;
-  font-weight: bold;
-}
-
-footer p {
-  font-size: 14px;
-  max-width: 786px;
-  margin: 0 auto;
 }
 
 </style>

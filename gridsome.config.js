@@ -7,5 +7,9 @@
 module.exports = {
   siteName: 'Markedup',
   siteUrl: 'https://markedup.nl',
-  plugins: []
+  plugins: [
+    {
+      use: 'gridsome-plugin-tailwindcss',
+    }
+  ]
 }

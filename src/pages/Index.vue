@@ -27,8 +27,4 @@ export default {
 
 <style>
 
-.social {
-  font-size: 19px;
-}
-
 </style>
