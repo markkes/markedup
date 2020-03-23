@@ -17,17 +17,14 @@ Welcome to the repository of the website for markedup.nl. This website is setup 
 3. `gridsome build` to buidl the static files
 4. Happy coding :tada:
 
-## Built With
+## Built with
 
 * [Visual Studio Code](https://code.visualstudio.com/) - Source code editor
-* [Prismic.io](http://prismic.io/) - Content Management System
-* [Gridsome](https://gridsome.org/) - Awesome Vue.js framework
+* [Prismic](http://prismic.io/) - Content management sytem
+* [Gridsome](https://gridsome.org/) - Vue.js framework for Static websites
+* [Tailwind CSS](https://tailwindcss.com) - CSS framework for rapid development
 * [Netlify](https://netlify.com) - Hosting and deployment
 
 ## Authors
 
 * **Mark Feenstra** - [markkes](https://github.com/markkes)
-
-## License
-
-..
