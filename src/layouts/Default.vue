@@ -17,7 +17,7 @@
     </div>
 
     <footer class="flex justify-center">
-        <p class="text-sm">Build with <a href="https://vue.js" target="_blank">Vue.js</a> & <a href="https://gridsome.org" target="_blank">Gridsome</a>.</p>
+        <p class="text-sm">Gebouwd met <a href="https://vue.js" target="_blank">Vue.js</a> & <a href="https://gridsome.org" target="_blank">Gridsome</a>.</p>
     </footer>
   </div>
 </template>
@@ -57,7 +57,7 @@ query {
 
   a {
     @apply text-black underline;
-    &:hover {
+    &:hover, &:focus {
       @apply text-primary no-underline;
     }
   }
