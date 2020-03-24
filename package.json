@@ -7,7 +7,8 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.0",
+    "gridsome-source-graphql-prismic": "^0.1.6"
   },
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.43"
