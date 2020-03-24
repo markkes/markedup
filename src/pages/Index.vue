@@ -14,6 +14,18 @@
   </Layout>
 </template>
 
+<page-query>
+  query Page {
+    prismic {
+      homepage(uid: "home", lang: "nl-NL") {
+        welcome_message
+        introduction
+        social
+      }
+    }
+  }
+</page-query>
+
 <script>
 export default {
   metaInfo: {
