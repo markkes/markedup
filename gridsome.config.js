@@ -15,13 +15,13 @@ module.exports = {
       }
     },
     {
-      // use: 'gridsome-source-graphql-prismic',
-      // options: {
-      //   url: `https://${process.env.PRISMIC_REPOSITORY}.prismic.io`,
-      //   fieldName: 'prismic',
-      //   typeName: 'prismic',
-      //   useMasterRef: true
-      // }
+      use: 'gridsome-source-graphql-prismic',
+      options: {
+        url: `https://${process.env.PRISMIC_REPOSITORY}.prismic.io`,
+        fieldName: 'prismic',
+        typeName: 'prismic',
+        useMasterRef: true
+      }
     }
   ]
 }
