@@ -1,10 +1,10 @@
 <template>
   <Layout>
 
-    <h1>Hallo. Ik ben een freelance front-end developer</h1>
+    <h1>Hallo. Ik ben Mark, een freelance front-end developer</h1>
 
     <p class="text-lg">
-      Mijn naam is Mark Feenstra, eigenaar van Markedup. Geboren en getogen in Heemskerk en van jongs af aan al geinstresseerd in computers. Na mijn middelbare school ontwikkelde deze intresse zich geleidelijk richting het web. Sindsdien heb ik aan veel diverse creative projecten mee mogen werken. Momenteel ben ik in te huren als Freelance en ben ik gespecialiseerd in het crearen van toffe Front-end Systemen.
+      Mijn naam is Mark Feenstra, eigenaar van Markedup. Geboren en getogen in Heemskerk en van jongs af aan al geinstresseerd in computers. Na mijn middelbare school ontwikkelde deze intresse zich geleidelijk richting het web. Sindsdien heb ik aan veel diverse creative projecten mee mogen werken. Momenteel ben ik in te huren op freelance basis en ben ik gespecialiseerd in het creëren van toffe front-end ervaringen.
     </p>
 
     <p>
