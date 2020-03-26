@@ -1,26 +1,80 @@
 <template>
   <Layout>
 
-    <h1>Hallo. Ik ben Mark, een freelance front-end developer</h1>
+    <PrismicRichtext
+      v-if="page.title && page.title.length"
+      :html="page.title" />
 
-    <p class="text-lg">
-      Mijn naam is Mark Feenstra, eigenaar van Markedup. Geboren en getogen in Heemskerk en van jongs af aan al geinstresseerd in computers. Na mijn middelbare school ontwikkelde deze intresse zich geleidelijk richting het web. Sindsdien heb ik aan veel diverse creative projecten mee mogen werken. Momenteel ben ik in te huren op freelance basis en ben ik gespecialiseerd in het creëren van toffe front-end ervaringen.
-    </p>
+    <PrismicRichtext
+      v-if="page.introduction && page.introduction.length"
+      :html="page.introduction" />
 
-    <p>
-      Vindt mij als @markkes op <a href="https://linkedin.com/in/mfeenstra86" title="LinkedIn" target="_blank">LinkedIn</a>, <a href="https://twitter.com/markkes" title="Twitter" target="_blank">Twitter</a> & <a href="https://github.com/markkes" title="Github" target="_blank">Github</a>.
-    </p>
+    <PrismicRichtext
+      v-if="page.sub_text && page.sub_text.length"
+      :html="page.sub_text" />
 
   </Layout>
 </template>
 
+<page-query>
+  query Page {
+    prismic {
+      page(uid: "home", lang: "nl-nl") {
+        meta_title
+        meta_description
+        title
+        introduction
+        body_text
+        sub_text
+      }
+    }
+  }
+</page-query>
+
 <script>
+import PrismicRichtext from '@/components/PrismicRichtext/PrismicRichtext'
+
 export default {
-  metaInfo: {
-    title: 'Front-end Developer in Heemskerk - Mark Feenstra - Markedup',
-    meta: [
-      { name: 'description', content: 'Markedup is een bedrijf van Mark Feenstra, freelance front-end developer uit Heemskerk. Neem contact met mij op wanneer u geintresseerd bent om samen toffe dingen te bouwen.' }
-    ]
+  name: 'PageIndex',
+  className: 'PageIndex',
+  components: {
+    PrismicRichtext
+  },
+  metaInfo() {
+    return ({
+      title: this.page.meta_title,
+      meta: [
+        {
+          name: 'description',
+          content: this.page.meta_description
+        },
+        {
+          name: 'author',
+          content: this.page.meta_author
+        },
+        {
+          property: 'og:title',
+          content: this.page.meta_title
+        },
+        {
+          property: 'og:description',
+          content: this.page.meta_description
+        },
+        {
+          property: 'twitter:title',
+          content: this.page.meta_title
+        },
+        {
+          property: 'twitter:description',
+          content: this.page.meta_description
+        },
+      ]
+    })
+  },
+  computed: {
+    page() {
+      return { ...this.$page.prismic.page }
+    }
   }
 }
 </script>
@@ -28,3 +82,4 @@ export default {
 <style>
 
 </style>
+
