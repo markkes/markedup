@@ -12,9 +12,7 @@
   "devDependencies": {
     "gridsome-plugin-tailwindcss": "^2.2.43",
     "gridsome-source-graphql-prismic": "^0.1.6",
-    "node-sass": "^4.13.1",
     "prismic-dom": "^2.1.0",
-    "sass-loader": "^8.0.2",
     "vue-svg-loader": "^0.16.0"
   }
 }
