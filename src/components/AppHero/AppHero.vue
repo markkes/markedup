@@ -26,15 +26,15 @@ export default {
   },
   props: {
     title: {
-      type: String,
+      type: Array,
       default: () => ([])
     },
     introduction: {
-      type: String,
+      type: Array,
       default: () => ([])
     },
     sub_text: {
-      type: String,
+      type: Array,
       default: () => ([])
     }
   }

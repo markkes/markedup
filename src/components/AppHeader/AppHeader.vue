@@ -1,5 +1,5 @@
 <template>
-  <header class="flex">
+  <header class="flex items-center lg:items-baseline">
     <g-link to="/">
       <AppLogo />
     </g-link>
@@ -20,17 +20,23 @@
   }
 </script>
 
-<style lang="scss" scoped>
+<style lang="postcss" scoped>
 
 header {
   position: relative;
-  padding-top: 65px;
-  padding-left: 240px;
-  a {
-    transform: rotate(-82deg);
-    position: absolute;
-    top: 100px;
-    left: 0;
+  padding: 20px 30px;
+  @screen lg {
+    padding-top: 65px;
+    padding-left: 240px;
+  }
+  & a {
+    @screen lg {
+      transform: rotate(-82deg);
+      position: absolute;
+      top: 100px;
+      left: 0;
+
+    }
   }
 }
 

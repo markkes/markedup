@@ -53,13 +53,21 @@ export default {
   }
 
   main {
-    margin-top: 100px;
-    padding-left: 240px;
-    padding-right: 240px;
+    margin-top: 30px;
+    padding-left: 30px;
+    padding-right: 30px;
+    @screen lg {
+      margin-top: 60px;
+      padding-left: 240px;
+      padding-right: 240px;
+    }
   }
 
   h1 {
-    @apply text-5xl pb-5 font-light leading-tight;
+    @apply text-3xl pb-5 font-light leading-tight;
+    @screen md {
+      @apply text-5xl;
+    }
   }
 
   h2 {
