@@ -23,7 +23,7 @@ import AppFooter from '@/components/AppFooter/AppFooter.vue'
 
 export default {
   name: 'AppLayout',
-  className: 'AppLayout',
+  className: 'AppLayout container',
   components: {
     AppHeader,
     AppFooter
@@ -44,8 +44,9 @@ export default {
     @apply text-color-text;
   }
 
-  .AppLayout {
+  .container {
     grid-template-rows: auto auto 1fr;
+    max-width: 1200px;
   }
 
   footer {
