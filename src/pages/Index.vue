@@ -1,19 +1,12 @@
 <template>
-  <Layout>
-
-    <PrismicRichtext
-      v-if="page.title && page.title.length"
-      :html="page.title" />
-
-    <PrismicRichtext
-      v-if="page.introduction && page.introduction.length"
-      :html="page.introduction" />
-
-    <PrismicRichtext
-      v-if="page.sub_text && page.sub_text.length"
-      :html="page.sub_text" />
-
-  </Layout>
+  <AppLayout>
+    <AppHero
+      :title="page.title"
+      :introduction="page.introduction"
+      :body_text="page.body_text"
+      :sub_text="page.sub_text" />
+      
+  </AppLayout>
 </template>
 
 <page-query>
@@ -32,13 +25,15 @@
 </page-query>
 
 <script>
-import PrismicRichtext from '@/components/PrismicRichtext/PrismicRichtext'
+import AppLayout from '@/layouts/AppLayout.vue'
+import AppHero from '@/components/AppHero/AppHero.vue'
 
 export default {
   name: 'PageIndex',
   className: 'PageIndex',
   components: {
-    PrismicRichtext
+    AppLayout,
+    AppHero
   },
   metaInfo() {
     return ({
@@ -71,12 +66,31 @@ export default {
       ]
     })
   },
+  props: {
+    title: {
+      type: Array,
+      default: () => ([])
+    },
+    introduction: {
+      type: Array,
+      default: () => ([])
+    },
+    body_text: {
+      type: Array,
+      default: () => ([])
+    },
+    sub_text: {
+      type: Array,
+      default: () => ([])
+    },
+  },
   computed: {
     page() {
       return { ...this.$page.prismic.page }
     }
   }
 }
+
 </script>
 
 <style>

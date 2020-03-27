@@ -1,7 +1,8 @@
 <template>
-  <footer class="flex justify-center">
+  <footer class="text-center p-10">
     <PrismicRichtext
       v-if="layout.footer_text && layout.footer_text.length"
+      :class="`text-xs`"
       :html="layout.footer_text" />
   </footer>
 </template>
