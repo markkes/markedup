@@ -12,7 +12,7 @@ Welcome to the repository of the website for markedup.nl. This website is setup 
 
 ### 2. Create this project
 
-1. Clone this repository to you local machine
+1. Clone this repository to you local machine 
 2. `gridsome develop` to start a local dev server at `http://localhost:8080`
 3. `gridsome build` to build the static files
 4. Yey! :tada:
@@ -20,10 +20,10 @@ Welcome to the repository of the website for markedup.nl. This website is setup 
 ## Built with
 
 * [Visual Studio Code](https://code.visualstudio.com/) - Source code editor
-* [Prismic](http://prismic.io/) - Content management sytem
-* [Gridsome](https://gridsome.org/) - Vue.js framework for Static websites
-* [Tailwind CSS](https://tailwindcss.com) - CSS framework for rapid development
-* [Netlify](https://netlify.com) - Hosting and deployment
+* [Prismic](http://prismic.io/) - Headless Content Management System
+* [Gridsome](https://gridsome.org/) - Javascript framework for static websites
+* [Tailwind CSS](https://tailwindcss.com) - Utility-first CSS framework
+* [Netlify](https://netlify.com) - Hosting and automatic deployment via GitHub
 
 ## Authors
 

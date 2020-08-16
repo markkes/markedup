@@ -1,8 +1,8 @@
 <template>
-  <Layout>
+  <AppLayout>
     <h1>Artikelen</h1>
     <p>Hier vindt je momenteel niets.</p>
-  </Layout>
+  </AppLayout>
 </template>
 
 <script>
