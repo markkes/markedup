@@ -7,12 +7,12 @@
     "explore": "gridsome explore"
   },
   "dependencies": {
-    "gridsome": "^0.7.0"
+    "gridsome": "^0.7.21"
   },
   "devDependencies": {
-    "gridsome-plugin-tailwindcss": "^2.2.43",
+    "gridsome-plugin-tailwindcss": "^2.2.48",
     "gridsome-source-graphql-prismic": "^0.1.6",
-    "prismic-dom": "^2.1.0",
+    "prismic-dom": "^2.2.4",
     "vue-svg-loader": "^0.16.0"
   }
 }
