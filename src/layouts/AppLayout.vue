@@ -3,7 +3,7 @@
     :id="$options.className"
     :class="[
       $options.className,
-      'grid h-screen'
+      'grid h-screen text-neutral-600'
     ]">
     <AppHeader />
     <main>
@@ -12,10 +12,6 @@
     <AppFooter />
   </div>
 </template>
-
-<static-query>
- 
-</static-query>
 
 <script>
 import AppHeader from '@/components/AppHeader/AppHeader.vue'
@@ -32,18 +28,6 @@ export default {
 </script>
 
 <style lang="postcss">
-
-  :root {
-    --color-link: #000;
-    --color-text: #8c9291;
-    --color-primary: #00a292;
-    --color-secondary: #ecc94b;
-  }
-
-  body {
-    @apply text-color-text;
-  }
-
   .container {
     grid-template-rows: auto auto 1fr;
     max-width: 1200px;
@@ -80,10 +64,10 @@ export default {
   }
 
   a {
-    @apply text-black no-underline;
+    @apply text-primary;
     transition: color .3s ease-in-out;
     &:hover {
-      @apply text-primary;
+      @apply text-secondary-500;
     }
   }
 
